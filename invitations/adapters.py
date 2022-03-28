@@ -4,14 +4,10 @@ from django.contrib.sites.models import Site
 from django.core.mail import EmailMessage, EmailMultiAlternatives
 from django.template import TemplateDoesNotExist
 from django.template.loader import render_to_string
+from django.utils.encoding import force_str
 
 from .app_settings import app_settings
 from .utils import import_attribute
-
-try:
-    from django.utils.encoding import force_text
-except ImportError:
-    from django.utils.encoding import force_unicode as force_text
 
 
 # Code credits here to django-allauth
@@ -29,7 +25,7 @@ class BaseInvitationsAdapter(object):
         if prefix is None:
             site = Site.objects.get_current()
             prefix = "[{name}] ".format(name=site.name)
-        return prefix + force_text(subject)
+        return prefix + force_str(subject)
 
     def render_mail(self, template_prefix, email, context):
         """

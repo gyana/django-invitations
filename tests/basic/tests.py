@@ -1,29 +1,28 @@
 import datetime
-import re
 import json
-from mock import patch
+import re
+from unittest.mock import patch
 
+import pytest
+from django.contrib.auth.models import AnonymousUser
+from django.core import mail
 from django.test import Client
 from django.test.client import RequestFactory
 from django.test.utils import override_settings
+from django.urls import reverse
 from django.utils import timezone
-try:
-    from django.urls import reverse
-except ImportError:
-    from django.core.urlresolvers import reverse
-from django.core import mail
-from django.contrib.auth.models import AnonymousUser
-
-import pytest
 from freezegun import freeze_time
 
 from invitations.adapters import (
-    BaseInvitationsAdapter, get_invitations_adapter)
+    BaseInvitationsAdapter,
+    get_invitations_adapter,
+)
 from invitations.app_settings import app_settings
-from invitations.views import AcceptInvite, SendJSONInvite
 from invitations.forms import InviteForm
-from .. models import ExampleSwappableInvitation
 from invitations.utils import get_invitation_model
+from invitations.views import AcceptInvite, SendJSONInvite
+
+from ..models import ExampleSwappableInvitation
 
 Invitation = get_invitation_model()
 
