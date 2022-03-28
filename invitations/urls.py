@@ -1,15 +1,10 @@
-from django.conf.urls import url
+from django.urls import path
 
 from . import views
 
-app_name = 'invitations'
+app_name = "invitations"
 urlpatterns = [
-    url(r'^send-invite/$', views.SendInvite.as_view(),
-        name='send-invite'),
-
-    url(r'^send-json-invite/$', views.SendJSONInvite.as_view(),
-        name='send-json-invite'),
-
-    url(r'^accept-invite/(?P<key>\w+)/?$', views.AcceptInvite.as_view(),
-        name='accept-invite'),
+    path("send-invite/", views.SendInvite.as_view(), name="send-invite"),
+    path("send-json-invite/", views.SendJSONInvite.as_view(), name="send-json-invite"),
+    path("accept-invite/<key>/?", views.AcceptInvite.as_view(), name="accept-invite"),
 ]

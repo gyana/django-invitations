@@ -1,14 +1,15 @@
-Changelog
-=========
+# Changelog
 
-x.x (yyyy-mm-dd)
-----------------
+## 1.10 (2022-03-28)
+
 (not yet released)
 
-- Added AppConfig.
+- markdownlint style formatting [MrCordeiro]
+- black style formatting [MrCordeiro]
+- Remove support for python 3.5, 3.6. Add support for python 3.9, 3.10 [MrCordeiro]
+- Remove support for Django 1.1, 2.2. Add support for Django 4.0 [MrCordeiro]
 
-1.9 (2017-02-11)
-----------------
+## 1.9 (2017-02-11)
 
 - Added get_signup_redirect to allow custom implementations by subclasses
 
@@ -28,14 +29,11 @@ x.x (yyyy-mm-dd)
 
 - Add email max length setting
 
-1.8 (2016-10-19)
-----------------
+## 1.8 (2016-10-19)
 
-*TO BE ADDED*
+- [TO BE ADDED]
 
-
-1.7 (2016-02-10)
-------------------------
+## 1.7 (2016-02-10)
 
 - 1.7. [bee-keeper]
 
@@ -71,7 +69,7 @@ x.x (yyyy-mm-dd)
 
   With Django 1.9, each time I run `python manage.py runserver`, it shows 2 warnings:
 
-  ```
+  ```bash
   /someplace/.venv/lib/python2.7/site-packages/invitations/urls.py:15: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
     name='accept-invite'),
 
@@ -81,8 +79,7 @@ x.x (yyyy-mm-dd)
 
   This pull request fixes it.
 
-1.6 (2016-01-10)
-----------------
+## 1.6 (2016-01-10)
 
 - V1.6. [bee_keeper]
 
@@ -105,8 +102,7 @@ x.x (yyyy-mm-dd)
 
 - Update README.md. [bee-keeper]
 
-1.5 (2015-12-07)
-----------------
+## 1.5 (2015-12-07)
 
 - Update README.md. [bee-keeper]
 
@@ -117,8 +113,7 @@ x.x (yyyy-mm-dd)
 - Removed the dependancy on django-allauth, this package is now a
   generic invite app. [bee_keeper]
 
-1.4 (2015-11-27)
-----------------
+## 1.4 (2015-11-27)
 
 - 1.4. [bee_keeper]
 
@@ -128,8 +123,7 @@ x.x (yyyy-mm-dd)
 
 - Coverage and exposing inviter in admin. [bee_keeper]
 
-1.3 (2015-11-26)
-----------------
+## 1.3 (2015-11-26)
 
 - Merge pull request #22 from bee-keeper/devel. [bee-keeper]
 
@@ -161,8 +155,7 @@ x.x (yyyy-mm-dd)
 
 - Roadmap. [bee_keeper]
 
-1.2 (2015-08-29)
-----------------
+## 1.2 (2015-08-29)
 
 - Test coverage done, ready for 1.2 release. [bee_keeper]
 
@@ -200,8 +193,7 @@ x.x (yyyy-mm-dd)
 
 - Tests and bug fixes. [bee-keeper]
 
-1.1 (2015-08-05)
-----------------
+## 1.1 (2015-08-05)
 
 - V 1.1. [bee_keeper]
 
@@ -215,8 +207,7 @@ x.x (yyyy-mm-dd)
 
   sends invitations from admin on save
 
-1.0 (2015-07-26)
-----------------
+## 1.0 (2015-07-26)
 
 - Release 1.0. [bee_keeper]
 
@@ -266,7 +257,7 @@ x.x (yyyy-mm-dd)
 
 - Merge pull request #6 from simonv3/master. [bee-keeper]
 
-  # Redo pull request of adding inviter to signal.
+## Redo pull request of adding inviter to signal
 
 - Add reference to inviter in signal. [Simon]
 
@@ -316,13 +307,11 @@ x.x (yyyy-mm-dd)
 
 - 1.7 style migrations. [bee_keeper]
 
-0.12 (2014-11-30)
------------------
+## 0.12 (2014-11-30)-
 
 - Release. [bee_keeper]
 
-0.11 (2014-11-30)
------------------
+## 0.11 (2014-11-30)-
 
 - Template paths. [bee_keeper]
 
@@ -332,8 +321,7 @@ x.x (yyyy-mm-dd)
 
 - Versions. [bee_keeper]
 
-0.1 (2014-11-30)
-----------------
+## 0.1 (2014-11-30)
 
 - Packaging. [bee_keeper]
 
@@ -346,5 +334,3 @@ x.x (yyyy-mm-dd)
 - Template path. [bee_keeper]
 
 - Name changes. [bee_keeper]
-
-
