@@ -1,12 +1,11 @@
 # Changelog
 
-## 1.10 (yyyy-mm-dd)
+## 1.10 (2022-03-28)
 
 (not yet released)
 
-- Added AppConfig.
-- markdownlint style formating [MrCordeiro]
-- black style formating [MrCordeiro]
+- markdownlint style formatting [MrCordeiro]
+- black style formatting [MrCordeiro]
 - Remove support for python 3.5, 3.6. Add support for python 3.9, 3.10 [MrCordeiro]
 - Remove support for Django 1.1, 2.2. Add support for Django 4.0 [MrCordeiro]
 
