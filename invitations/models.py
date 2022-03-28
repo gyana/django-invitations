@@ -2,14 +2,11 @@ import datetime
 
 from django.conf import settings
 from django.contrib.sites.models import Site
-try:
-    from django.urls import reverse
-except ImportError:
-    from django.core.urlresolvers import reverse
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 from django.utils.crypto import get_random_string
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from . import signals
 from .adapters import get_invitations_adapter
