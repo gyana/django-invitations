@@ -4,6 +4,8 @@
 
 ## About
 
+> This a fork of [django-invitations](https://github.com/bee-keeper/django-invitations). By March 2022, the original project wasn't being updated and I needed it to be compactible with Django 4.0+ for my own projects.
+
 Generic invitations solution with adaptable backend and support for django-allauth.  All emails and messages are fully customisable.
 
 Originally written as an invitations solution for the excellent [django-allauth](https://github.com/pennersr/django-allauth), this app has been refactored to remove the allauth dependency whilst retaining 100% backwards compatibility.
