@@ -31,7 +31,6 @@ python = "^3.7"
 django = ">=3.2,<4.1"
 
 [tool.poetry.dev-dependencies]
-django-allauth = "*"
 coverage = "^6.3.2"
 flake8 = "^8.4.0"
 freezegun = "^1.2.1"

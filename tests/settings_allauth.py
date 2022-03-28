@@ -1,4 +1,4 @@
-from test_settings import *
+from .settings import *
 
 INSTALLED_APPS = (
     "django.contrib.auth",

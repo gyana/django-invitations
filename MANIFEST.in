@@ -1,4 +1,0 @@
-include LICENSE CHANGELOG.md README.md pyproject.toml manage.py tox.ini
-recursive-include invitations/templates *
-include test_*.py
-recursive-include tests *.py
