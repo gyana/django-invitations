@@ -1,20 +1,12 @@
 # Django-invitations - Generic invitations app
 
-[![Jazzband](https://jazzband.co/static/img/badge.svg)](https://jazzband.co/)
-[![PyPI Download](https://img.shields.io/pypi/v/django-invitations.svg)](https://pypi.python.org/pypi/django-invitations)
-[![PyPI Python Versions](https://img.shields.io/pypi/pyversions/django-invitations.svg)](https://pypi.python.org/pypi/django-invitations)
-[![Build Status](https://travis-ci.org/bee-keeper/django-invitations.svg?branch=master)](https://travis-ci.org/bee-keeper/django-invitations)
-[![Coverage Status](https://coveralls.io/repos/bee-keeper/django-invitations/badge.svg?branch=master&service=github)](https://coveralls.io/github/bee-keeper/django-invitations?branch=master)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## About
 
 Generic invitations solution with adaptable backend and support for django-allauth.  All emails and messages are fully customisable.
 
 Originally written as an invitations solution for the excellent [django-allauth](https://github.com/pennersr/django-allauth), this app has been refactored to remove the allauth dependency whilst retaining 100% backwards compatibility.
-
-## Contributing
-
-As we are members of a [JazzBand project](https://jazzband.co/projects), `django-invitations` contributors should adhere to the [Contributor Code of Conduct](https://jazzband.co/about/conduct).
 
 ## Installation
 
@@ -25,7 +17,7 @@ pip install django-invitations
 'invitations',
 
 # Append to urls.py
-url(r'^invitations/', include('invitations.urls', namespace='invitations')),
+path('invitations/', include('invitations.urls', namespace='invitations')),
 
 # Run migrations
 

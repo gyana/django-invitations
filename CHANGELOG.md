@@ -6,6 +6,7 @@
 
 - Added AppConfig.
 - markdownlint style formating [MrCordeiro]
+- black style formating [MrCordeiro]
 - Remove support for python 3.5, 3.6. Add support for python 3.9, 3.10 [MrCordeiro]
 - Remove support for Django 1.1, 2.2. Add support for Django 4.0 [MrCordeiro]
 
